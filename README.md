@@ -90,35 +90,6 @@ npm run preview
 
 ---
 
-## 📁 Project Structure
-
-```
-6wordle/
-├── public/                 # Static assets
-├── src/
-│   ├── assets/
-│   │   └── fx/             # Sound effect files (.mp3)
-│   ├── components/
-│   │   ├── GuessLine.tsx   # Renders a single row of letter tiles
-│   │   ├── Header.tsx      # Game title and stats
-│   │   └── HeaderStats.tsx # Displays word library count
-│   ├── data/
-│   │   └── words.ts        # The word library (valid guesses + answers)
-│   ├── styles/
-│   │   ├── App.css         # Global styles and keyframe animations
-│   │   └── Header.css      # Neon title styles and shimmer animation
-│   ├── types/
-│   │   └── interfaces.ts   # Shared TypeScript interfaces
-│   ├── App.tsx             # Root component, core game logic
-│   └── index.tsx           # App entry point
-├── index.html              # Vite HTML entry
-├── vite.config.ts          # Vite configuration
-├── tailwind.config.js      # Tailwind configuration
-└── tsconfig.json           # TypeScript configuration
-```
-
----
-
 ## 🧠 Game Logic
 
 The core game logic lives in `App.tsx` and works as follows:
