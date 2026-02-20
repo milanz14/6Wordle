@@ -1,159 +1,36 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #ffdee9;
-  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
-}
-
-.guess {
-  max-width: 350px;
-}
-
-.btn {
-  max-width: 400px;
-}
-
-.guessesInput {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 35px;
-  background: rgba(255, 255, 255, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.line {
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-}
-
-.gameboard {
-  margin-top: 25px;
-  min-width: 45%;
-  max-height: 90%;
-  padding: 15px 20px;
-  background: rgba(255, 255, 255, 0.45);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 15px;
-}
-
-.square {
-  border-radius: 15%;
-  width: 75px;
-  height: 75px;
-  box-shadow: 2px 2px 2px #535252;
-  margin: 2px;
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-}
-
-.results-container {
-  margin-top: 30px;
-}
-
-.word {
-  font-size: 20px;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .correct {
-  background-color: lightgreen;
-  border: 2px solid green;
   position: relative;
   overflow: hidden;
-}
-
-.correct::before {
-  content: "";
-  opacity: 0.2;
-  position: absolute;
-  background: linear-gradient(#135403, #5eff00);
-  width: 170px;
-  height: 150%;
-  animation: rotate 1s linear infinite;
-}
-
-.correct::after {
-  content: "";
-  position: absolute;
-  opacity: 0.2;
-  background: #fff;
-  position: absolute;
-  border-radius: 10px;
-  inset: 10px;
 }
 
 .close {
-  background-color: rgb(251, 251, 114);
-  border: 2px solid yellow;
   position: relative;
   overflow: hidden;
 }
 
-.close::before {
-  content: "";
-  opacity: 0.2;
-  position: absolute;
-  background: linear-gradient(rgb(255, 115, 0), rgb(255, 242, 0));
-  width: 170px;
-  height: 150%;
-  animation: rotate 1s linear infinite;
-}
-
-.close::after {
-  content: "";
-  position: absolute;
-  opacity: 0.2;
-  background: #fff;
-  border-radius: 10px;
-  inset: 10px;
-}
-
-.incorrect {
-  background-color: lightgrey;
-}
-
-.reset-btn {
-  width: 400px;
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 2rem;
-}
-
-@media (max-width: 375px) {
-  .square {
-    width: 50px;
-    height: 50px;
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
   }
-
-  .guess {
-    max-width: 250px;
+  20% {
+    transform: translateX(-8px);
   }
-
-  button {
-    width: 250px;
+  40% {
+    transform: translateX(8px);
+  }
+  60% {
+    transform: translateX(-6px);
+  }
+  80% {
+    transform: translateX(6px);
   }
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shake {
+  animation: shake 0.4s ease-in-out;
 }

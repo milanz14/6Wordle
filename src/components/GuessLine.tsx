@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { GuessLineProps } from "../types/interfaces";
 
 const WORD_LENGTH = 6;
@@ -10,25 +11,32 @@ const GuessLine = ({
   const squares = [];
 
   for (let i = 0; i < WORD_LENGTH; i++) {
-    const letter = guess[i]!;
-    let className = "square";
+    const letter = guess[i] ?? "";
+    let colorClass = "bg-white/10 border-white/20";
+
     if (isFinal) {
       if (letter === solution[i]) {
-        className += " correct";
-      } else if (solution.includes(letter)) {
-        className += " close";
+        colorClass = "bg-emerald-500 border-emerald-400";
+      } else if (solution.includes(letter) && letter !== "") {
+        colorClass = "bg-amber-400 border-amber-300";
       } else {
-        className += " incorrect";
+        colorClass = "bg-slate-600 border-slate-500";
       }
     }
+
     squares.push(
-      <div className={className} key={i}>
+      <motion.div
+        key={i}
+        className={`w-14 h-14 rounded-lg border-2 flex items-center justify-center text-white font-bold text-xl uppercase shadow-md ${colorClass}`}
+        initial={isFinal ? { rotateX: 0 } : false}
+        animate={isFinal ? { rotateX: 360 } : {}}
+        transition={{ delay: i * 0.1, duration: 0.4, ease: "easeInOut" }}>
         {letter}
-      </div>
+      </motion.div>,
     );
   }
 
-  return <div className="line">{squares}</div>;
+  return <div className="flex justify-center gap-2 py-1">{squares}</div>;
 };
 
 export default GuessLine;
