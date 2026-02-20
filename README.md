@@ -2,6 +2,8 @@
 
 A browser-based word guessing game inspired by Wordle — but harder. You have 6 attempts to guess a secret **6-letter word**. Built with React, TypeScript, Vite, Tailwind CSS, and Framer Motion.
 
+Deployed at: https://6wordle.surge.sh/
+
 ---
 
 ## 📸 Preview
