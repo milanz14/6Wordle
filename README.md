@@ -38,7 +38,7 @@ Deployed at: https://6wordle.surge.sh/
 | [Vite](https://vitejs.dev/)                     | Build tool and dev server   |
 | [Tailwind CSS](https://tailwindcss.com/)        | Utility-first styling       |
 | [Framer Motion](https://www.framer.com/motion/) | Tile flip and UI animations |
-| [Howler.js](https://howlerjs.com/)              | Sound effects               |
+
 
 ---
 
