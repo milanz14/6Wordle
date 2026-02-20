@@ -8,7 +8,7 @@ Deployed at: https://6wordle.surge.sh/
 
 ## 📸 Preview
 
-> Gameplay Screenshot!: `![Gameplay Screenshot](./src/assets/gameplay.png)`
+> Gameplay Screenshot: `[Gameplay Screenshot](./src/assets/gameplay.png)`
 
 ---
 
