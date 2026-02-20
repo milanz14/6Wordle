@@ -6,7 +6,7 @@ A browser-based word guessing game inspired by Wordle — but harder. You have 6
 
 ## 📸 Preview
 
-> Gameplay Screenshot!: `![Gameplay Screenshot](./screenshot.png)`
+> Gameplay Screenshot!: `![Gameplay Screenshot](./src/assets/screenshot.png)`
 
 ---
 
