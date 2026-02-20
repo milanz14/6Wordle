@@ -56,7 +56,7 @@ Make sure you have the following installed:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/6wordle.git
+git clone https://github.com/milanz14/6wordle.git
 cd 6wordle
 ```
 
@@ -102,7 +102,6 @@ The core game logic lives in `App.tsx` and works as follows:
 
 **Win/Loss Detection** — if the guess matches the solution exactly the player wins. If the player exhausts all 6 guesses without a correct answer the game ends in a loss and the solution is revealed.
 
-**Sound Effects** — Howler.js plays one of three sounds on submit, win, or loss. Volume is globally capped at 5% to avoid startling anyone.
 
 ---
 
@@ -112,7 +111,6 @@ The core game logic lives in `App.tsx` and works as follows:
 - 🔄 Tile flip animations on guess submission via Framer Motion
 - 📳 Input shake animation on invalid guesses
 - 🍞 Toast notifications instead of browser alerts
-- 🔊 Sound effects for submit, win, and lose
 - 📱 Fully responsive — works on mobile, tablet, and desktop
 - ♿ Semantic HTML structure
 
