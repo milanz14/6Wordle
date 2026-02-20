@@ -1,7 +1,0 @@
-.header {
-  position: sticky;
-  background: -webkit-linear-gradient(#ff3cac, #2b86c5);
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
