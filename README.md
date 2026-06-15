@@ -2,7 +2,7 @@
 
 A browser-based word guessing game inspired by Wordle — but harder. You have 6 attempts to guess a secret **6-letter word**. Built with React, TypeScript, Vite, Tailwind CSS, and Framer Motion.
 
-Deployed at: https://6wordle.surge.sh/
+Deployed at: https://6wordle.netlify.app/
 
 ---
 
@@ -38,7 +38,6 @@ Deployed at: https://6wordle.surge.sh/
 | [Vite](https://vitejs.dev/)                     | Build tool and dev server   |
 | [Tailwind CSS](https://tailwindcss.com/)        | Utility-first styling       |
 | [Framer Motion](https://www.framer.com/motion/) | Tile flip and UI animations |
-
 
 ---
 
@@ -101,7 +100,6 @@ The core game logic lives in `App.tsx` and works as follows:
 **Tile Scoring** — handled in `GuessLine.tsx`. Each letter is compared against the solution: an exact position match gets green, a letter that exists elsewhere in the word gets yellow, and anything else gets grey.
 
 **Win/Loss Detection** — if the guess matches the solution exactly the player wins. If the player exhausts all 6 guesses without a correct answer the game ends in a loss and the solution is revealed.
-
 
 ---
 
